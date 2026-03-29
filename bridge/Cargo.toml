@@ -1,0 +1,14 @@
+[package]
+name = "void-bridge"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Discord & Telegram Libraries
+serenity = { version = "0.12", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
+teloxide = { version = "0.12", features = ["macros"] }
+
+# System Utilities
+tokio = { version = "1.37", features = ["full"] }
+dotenv = "0.15"
+tracing = "0.1"
